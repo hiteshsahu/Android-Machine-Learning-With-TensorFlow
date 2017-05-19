@@ -20,7 +20,7 @@ handled by `libtensorflow_demo.so`.
 1. [Identification of Objects](https://github.com/hiteshsahu/Android-Machine-Learning-With-TensorFlow/blob/master/src/com/hiteshsahu/tensorflow_android/view/activity/ClassifierActivityBase.java):
         Identify the objects appear in Camera preview with the help of [Google Inception](https://arxiv.org/abs/1409.4842) and try to guess their name them with the help of pre trained models. Tensorflow give  confidence score for each guessd name (Higher is Better).
         
-<img src="art/classify_1.jpg" width="30%"><img src="art/classify2_.jpg" width="30%">
+<img src="art/classify_1.jpg" width="30%"><img src="art/classify_2.jpg" width="30%">
 
         
 2. [Tracking People](https://github.com/hiteshsahu/Android-Machine-Learning-With-TensorFlow/blob/master/src/com/hiteshsahu/tensorflow_android/view/activity/DetectorActivityBase.java):
