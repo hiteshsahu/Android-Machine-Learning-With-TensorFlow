@@ -1,0 +1,54 @@
+[
+    {
+        "outputFile": "C:\\Users\\hitesh.sahu\\Downloads\\tensorflow-master\\tensorflow-master\\tensorflow\\examples\\android\\gradleBuild\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v21\\values-v21.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endLine": 3,
+                    "endColumn": 12,
+                    "endOffset": 131
+                },
+                "from": {
+                    "file": "C:\\Users\\hitesh.sahu\\Downloads\\tensorflow-master\\tensorflow-master\\tensorflow\\examples\\android\\res\\values-v21\\base-template-styles.xml",
+                    "position": {
+                        "startLine": 20,
+                        "startColumn": 4,
+                        "startOffset": 690,
+                        "endLine": 21,
+                        "endColumn": 12,
+                        "endOffset": 766
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "outputFile": "D:\\Git Clone Directory\\Machine-Learning-Android\\gradleBuild\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v21\\values-v21.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endLine": 3,
+                    "endColumn": 12,
+                    "endOffset": 131
+                },
+                "from": {
+                    "file": "D:\\Git Clone Directory\\Machine-Learning-Android\\res\\values-v21\\base-template-styles.xml",
+                    "position": {
+                        "startLine": 20,
+                        "startColumn": 4,
+                        "startOffset": 690,
+                        "endLine": 21,
+                        "endColumn": 12,
+                        "endOffset": 766
+                    }
+                }
+            }
+        ]
+    }
+]

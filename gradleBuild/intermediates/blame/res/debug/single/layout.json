@@ -1,0 +1,34 @@
+[
+    {
+        "merged": "C:\\Users\\hitesh.sahu\\Downloads\\tensorflow-master\\tensorflow-master\\tensorflow\\examples\\android\\gradleBuild\\intermediates\\res\\merged\\debug\\layout\\camera_connection_fragment_tracking.xml",
+        "source": "C:\\Users\\hitesh.sahu\\Downloads\\tensorflow-master\\tensorflow-master\\tensorflow\\examples\\android\\res\\layout\\camera_connection_fragment_tracking.xml"
+    },
+    {
+        "merged": "D:\\Git Clone Directory\\Machine-Learning-Android\\gradleBuild\\intermediates\\res\\merged\\debug\\layout\\activity_camera.xml",
+        "source": "D:\\Git Clone Directory\\Machine-Learning-Android\\res\\layout\\activity_camera.xml"
+    },
+    {
+        "merged": "D:\\Git Clone Directory\\Machine-Learning-Android\\gradleBuild\\intermediates\\res\\merged\\debug\\layout\\camera_connection_fragment.xml",
+        "source": "D:\\Git Clone Directory\\Machine-Learning-Android\\res\\layout\\camera_connection_fragment.xml"
+    },
+    {
+        "merged": "D:\\Git Clone Directory\\Machine-Learning-Android\\gradleBuild\\intermediates\\res\\merged\\debug\\layout\\camera_connection_fragment_tracking.xml",
+        "source": "D:\\Git Clone Directory\\Machine-Learning-Android\\res\\layout\\camera_connection_fragment_tracking.xml"
+    },
+    {
+        "merged": "D:\\Git Clone Directory\\Machine-Learning-Android\\gradleBuild\\intermediates\\res\\merged\\debug\\layout\\camera_connection_fragment_stylize.xml",
+        "source": "D:\\Git Clone Directory\\Machine-Learning-Android\\res\\layout\\camera_connection_fragment_stylize.xml"
+    },
+    {
+        "merged": "C:\\Users\\hitesh.sahu\\Downloads\\tensorflow-master\\tensorflow-master\\tensorflow\\examples\\android\\gradleBuild\\intermediates\\res\\merged\\debug\\layout\\camera_connection_fragment_stylize.xml",
+        "source": "C:\\Users\\hitesh.sahu\\Downloads\\tensorflow-master\\tensorflow-master\\tensorflow\\examples\\android\\res\\layout\\camera_connection_fragment_stylize.xml"
+    },
+    {
+        "merged": "C:\\Users\\hitesh.sahu\\Downloads\\tensorflow-master\\tensorflow-master\\tensorflow\\examples\\android\\gradleBuild\\intermediates\\res\\merged\\debug\\layout\\activity_camera.xml",
+        "source": "C:\\Users\\hitesh.sahu\\Downloads\\tensorflow-master\\tensorflow-master\\tensorflow\\examples\\android\\res\\layout\\activity_camera.xml"
+    },
+    {
+        "merged": "C:\\Users\\hitesh.sahu\\Downloads\\tensorflow-master\\tensorflow-master\\tensorflow\\examples\\android\\gradleBuild\\intermediates\\res\\merged\\debug\\layout\\camera_connection_fragment.xml",
+        "source": "C:\\Users\\hitesh.sahu\\Downloads\\tensorflow-master\\tensorflow-master\\tensorflow\\examples\\android\\res\\layout\\camera_connection_fragment.xml"
+    }
+]

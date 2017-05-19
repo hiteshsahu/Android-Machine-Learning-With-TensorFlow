@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="C:\Users\hitesh.sahu\.android\build-cache\f5f9593ac5eb8d851ff781395bd65517d13073ee\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="547326950573bb73d6064506e003a201045b2bd7">
+        <dex dex="C:\Users\hitesh.sahu\Downloads\tensorflow-master\tensorflow-master\tensorflow\examples\android\gradleBuild\intermediates\pre-dexed\debug\classes_edeb7f1dab9da84cdc7507c81c1f53bab86d5f0d.jar" />
+    </item>
+
+</items>
