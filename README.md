@@ -1,36 +1,33 @@
 # TensorFlow Android Camera Demo
 
-This folder contains an example application utilizing TensorFlow for Android
-devices.
+ Google Introduces Machine Learning with Tensorflow in GoogleIO for Android Oreo. This Repo demosntrate how one can utilize TensorFlow for Android to detect movment, classify real world objects and style them in pure JNI layer and pre fed models without help of any external API .
 
-## Description
+## Limitation
 
-The demos in this folder are designed to give straightforward samples of using
-TensorFlow in mobile applications.
+  In order to run this demos you will need an Android device running Android 5.0 (API 21) or higher as the BaseCameraActivity which captures images uses the camera2 API.
 
-Inference is done using the [TensorFlow Android Inference Interface](../../../tensorflow/contrib/android),
+# Extending support
+
+- Native libraries themselves can run on API >= 14 devices.I am planning to give backword compatibility for pre Lollipop devices with the help of deprecated Camera1 API. However that I am planning to do in later stage.
+
+- Inference is done using the [TensorFlow Android Inference Interface](../../../tensorflow/contrib/android),
 which may be built separately if you want a standalone library to drop into your
 existing application. Object tracking and efficient YUV -> RGB conversion are
 handled by `libtensorflow_demo.so`.
 
-A device running Android 5.0 (API 21) or higher is required to run the demo due
-to the use of the camera2 API, although the native libraries themselves can run
-on API >= 14 devices.
+## What is Included:
 
-## Current samples:
+1. [Identification of Objects](https://github.com/hiteshsahu/Android-Machine-Learning-With-TensorFlow/blob/master/src/com/hiteshsahu/tensorflow_android/view/activity/ClassifierActivityBase.java):
+        Identify the objects appear in Camera preview with the help of [Google Inception](https://arxiv.org/abs/1409.4842) and try to guess their name them with the help of pre trained models. Tensorflow give  confidence score for each guessd name (Higher is Better).
+        
 
-1. [TF Classify](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/examples/android/src/org/tensorflow/demo/ClassifierActivity.java):
-        Uses the [Google Inception](https://arxiv.org/abs/1409.4842)
-        model to classify camera frames in real-time, displaying the top results
-        in an overlay on the camera image.
-2. [TF Detect](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/examples/android/src/org/tensorflow/demo/DetectorActivity.java):
-        Demonstrates a model based on [Scalable Object Detection
-        using Deep Neural Networks](https://arxiv.org/abs/1312.2249) to
-        localize and track people in the camera preview in real-time.
-3. [TF Stylize](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/examples/android/src/org/tensorflow/demo/StylizeActivity.java):
-        Uses a model based on [A Learned Representation For Artistic
-        Style](https://arxiv.org/abs/1610.07629) to restyle the camera preview 
-        image to that of a number of different artists.
+2. [Tracking People](https://github.com/hiteshsahu/Android-Machine-Learning-With-TensorFlow/blob/master/src/com/hiteshsahu/tensorflow_android/view/activity/DetectorActivityBase.java):
+      Locate and track people in Camera preview with the help of model based on [Scalable Object Detection
+        using Deep Neural Networks](https://arxiv.org/abs/1312.2249) in real-time.
+        
+3. [Making Art](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/examples/android/src/org/tensorflow/demo/StylizeActivity.java):
+        Look at real life objects with the help of camera preview and convert the frame into a Painting with the help of model based on [A Learned Representation For Artistic
+        Style](https://arxiv.org/abs/1610.07629).
 
 <img src="sample_images/classify1.jpg" width="30%"><img src="sample_images/stylize1.jpg" width="30%"><img src="sample_images/detect1.jpg" width="30%">
 
