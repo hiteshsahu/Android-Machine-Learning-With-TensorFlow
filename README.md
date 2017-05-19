@@ -1,4 +1,4 @@
-# TensorFlow Android Camera Demo
+# Machine Learning in Android With TensorFlow
 
  Google Introduces Machine Learning with Tensorflow in GoogleIO for Android Oreo. This Repo demosntrate how one can utilize TensorFlow for Android to detect movment, classify real world objects and style them in pure JNI layer and pre fed models without help of any external API .
 
@@ -6,7 +6,7 @@
 
   In order to run this demos you will need an Android device running Android 5.0 (API 21) or higher as the BaseCameraActivity which captures images uses the camera2 API.
 
-# Extending support
+## Extending support
 
 - Native libraries themselves can run on API >= 14 devices.I am planning to give backword compatibility for pre Lollipop devices with the help of deprecated Camera1 API. However that I am planning to do in later stage.
 
@@ -20,16 +20,25 @@ handled by `libtensorflow_demo.so`.
 1. [Identification of Objects](https://github.com/hiteshsahu/Android-Machine-Learning-With-TensorFlow/blob/master/src/com/hiteshsahu/tensorflow_android/view/activity/ClassifierActivityBase.java):
         Identify the objects appear in Camera preview with the help of [Google Inception](https://arxiv.org/abs/1409.4842) and try to guess their name them with the help of pre trained models. Tensorflow give  confidence score for each guessd name (Higher is Better).
         
+<img src="arts/classify1.jpg" width="30%">
+<img src="arts/classify2.jpg" width="30%">
 
+        
 2. [Tracking People](https://github.com/hiteshsahu/Android-Machine-Learning-With-TensorFlow/blob/master/src/com/hiteshsahu/tensorflow_android/view/activity/DetectorActivityBase.java):
       Locate and track people in Camera preview with the help of model based on [Scalable Object Detection
         using Deep Neural Networks](https://arxiv.org/abs/1312.2249) in real-time.
         
+<img src="art/detect_1.jpg" width="30%">
+<img src="art/detect_2.jpg" width="30%">
+<img src="art/detect_3.jpg" width="30%">
+<img src="art/detect_4.jpg" width="30%">
+        
 3. [Making Art](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/examples/android/src/org/tensorflow/demo/StylizeActivity.java):
         Look at real life objects with the help of camera preview and convert the frame into a Painting with the help of model based on [A Learned Representation For Artistic
         Style](https://arxiv.org/abs/1610.07629).
+        
+<img src="art/artistic.jpg" width="30%">
 
-<img src="sample_images/classify1.jpg" width="30%"><img src="sample_images/stylize1.jpg" width="30%"><img src="sample_images/detect1.jpg" width="30%">
 
 ## Prebuilt Components:
 
