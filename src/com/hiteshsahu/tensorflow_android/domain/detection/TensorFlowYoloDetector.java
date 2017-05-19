@@ -20,9 +20,10 @@ import android.graphics.Bitmap;
 import android.graphics.RectF;
 import android.os.Trace;
 
-import org.tensorflow.contrib.android.TensorFlowInferenceInterface;
 import com.hiteshsahu.tensorflow_android.utils.Logger;
 import com.hiteshsahu.tensorflow_android.utils.SplitTimer;
+
+import org.tensorflow.contrib.android.TensorFlowInferenceInterface;
 
 import java.util.ArrayList;
 import java.util.Comparator;
@@ -145,7 +146,7 @@ public class TensorFlowYoloDetector implements Classifier {
     bitmap.getPixels(intValues, 0, bitmap.getWidth(), 0, 0, bitmap.getWidth(), bitmap.getHeight());
 
     for (int i = 0; i < intValues.length; ++i) {
-      floatValues[i * 3 + 0] = ((intValues[i] >> 16) & 0xFF) / 255.0f;
+      floatValues[i * 3] = ((intValues[i] >> 16) & 0xFF) / 255.0f;
       floatValues[i * 3 + 1] = ((intValues[i] >> 8) & 0xFF) / 255.0f;
       floatValues[i * 3 + 2] = (intValues[i] & 0xFF) / 255.0f;
     }
