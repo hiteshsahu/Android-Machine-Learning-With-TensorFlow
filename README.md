@@ -20,12 +20,16 @@ handled by `libtensorflow_demo.so`.
 1. [Identification of Objects](https://github.com/hiteshsahu/Android-Machine-Learning-With-TensorFlow/blob/master/src/com/hiteshsahu/tensorflow_android/view/activity/ClassifierActivityBase.java):
         Identify the objects appear in Camera preview with the help of [Google Inception](https://arxiv.org/abs/1409.4842) and try to guess their name them with the help of pre trained models. Tensorflow give  confidence score for each guessd name (Higher is Better).
         
+ Tensorflow successfully guessed my coffee mug and my handwatch.       
+        
 <img src="art/classify_1.jpg" width="30%"><img src="art/classify_2.jpg" width="30%">
 
         
 2. [Tracking People](https://github.com/hiteshsahu/Android-Machine-Learning-With-TensorFlow/blob/master/src/com/hiteshsahu/tensorflow_android/view/activity/DetectorActivityBase.java):
       Locate and track people in Camera preview with the help of model based on [Scalable Object Detection
         using Deep Neural Networks](https://arxiv.org/abs/1312.2249) in real-time.
+  
+ The Terminatore Vison, this is how Tensorflow sees my collegues and me.
         
 <img src="art/detect_1.jpg" width="25%"><img src="art/detect_2.jpg" width="25%"><img src="art/detect_3.jpg" width="25%"><img src="art/detect_4.jpg" width="25%">
         
@@ -33,7 +37,9 @@ handled by `libtensorflow_demo.so`.
         Look at real life objects with the help of camera preview and convert the frame into a Painting with the help of model based on [A Learned Representation For Artistic
         Style](https://arxiv.org/abs/1610.07629).
         
-<img src="art/artistic.jpg" width="30%">
+ I have converted one of my sketches into art work with the help of Machine Learning
+ 
+<img src="art/style_1.jpg" width="30%"><img src="art/style_2.jpg" width="30%"><img src="art/style_3.jpg" width="30%">
 
 
 ## Prebuilt Components:
