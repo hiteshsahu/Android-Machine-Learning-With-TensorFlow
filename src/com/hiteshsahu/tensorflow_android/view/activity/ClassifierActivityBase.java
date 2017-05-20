@@ -35,6 +35,7 @@ import android.widget.TextView;
 
 import com.hiteshsahu.tensorflow_android.domain.detection.Classifier;
 import com.hiteshsahu.tensorflow_android.domain.detection.TensorFlowImageClassifier;
+import com.hiteshsahu.tensorflow_android.utils.AppConfig;
 import com.hiteshsahu.tensorflow_android.utils.BorderedText;
 import com.hiteshsahu.tensorflow_android.utils.ImageUtils;
 import com.hiteshsahu.tensorflow_android.utils.Logger;
@@ -64,15 +65,10 @@ public class ClassifierActivityBase extends BaseCameraActivity implements OnImag
     // --input_node_names="Mul" \
     // --output_node_names="final_result" \
     // --input_binary=true
-    private static final int INPUT_SIZE = 224;
-    private static final int IMAGE_MEAN = 117;
+
     private static final float IMAGE_STD = 1;
     private static final String INPUT_NAME = "input";
     private static final String OUTPUT_NAME = "output";
-
-    private static final String MODEL_FILE = "file:///android_asset/tensorflow_inception_graph.pb";
-    private static final String LABEL_FILE =
-            "file:///android_asset/imagenet_comp_graph_label_strings.txt";
 
     private static final boolean SAVE_PREVIEW_BITMAP = false;
 
@@ -129,10 +125,10 @@ public class ClassifierActivityBase extends BaseCameraActivity implements OnImag
         classifier =
                 TensorFlowImageClassifier.create(
                         getAssets(),
-                        MODEL_FILE,
-                        LABEL_FILE,
-                        INPUT_SIZE,
-                        IMAGE_MEAN,
+                        AppConfig.MODEL_OBJECT_CLASSIFICATION,
+                        AppConfig.LABEL_OBJECT_CLASSIFICATION,
+                        AppConfig.INPUT_SIZE,
+                        AppConfig.IMAGE_MEAN,
                         IMAGE_STD,
                         INPUT_NAME,
                         OUTPUT_NAME);
@@ -151,12 +147,12 @@ public class ClassifierActivityBase extends BaseCameraActivity implements OnImag
         LOGGER.i("Initializing at size %dx%d", previewWidth, previewHeight);
         rgbBytes = new int[previewWidth * previewHeight];
         rgbFrameBitmap = Bitmap.createBitmap(previewWidth, previewHeight, Config.ARGB_8888);
-        croppedBitmap = Bitmap.createBitmap(INPUT_SIZE, INPUT_SIZE, Config.ARGB_8888);
+        croppedBitmap = Bitmap.createBitmap(AppConfig.INPUT_SIZE, AppConfig.INPUT_SIZE, Config.ARGB_8888);
 
         frameToCropTransform =
                 ImageUtils.getTransformationMatrix(
                         previewWidth, previewHeight,
-                        INPUT_SIZE, INPUT_SIZE,
+                        AppConfig.INPUT_SIZE, AppConfig.INPUT_SIZE,
                         sensorOrientation, MAINTAIN_ASPECT);
 
         cropToFrameTransform = new Matrix();
@@ -241,7 +237,7 @@ public class ClassifierActivityBase extends BaseCameraActivity implements OnImag
                         recogResult = "";
                         if (results != null) {
                             for (final Classifier.Recognition recog : results) {
-                                recogResult += recog.getTitle() + ": " + recog.getConfidence()+"\n";
+                                recogResult += recog.getTitle() + ": " + recog.getConfidence() + "\n";
                             }
                         }
 

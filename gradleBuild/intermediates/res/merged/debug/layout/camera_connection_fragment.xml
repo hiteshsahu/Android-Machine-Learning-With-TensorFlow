@@ -29,7 +29,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:background="#80000000"
-        android:textColor="#FFF" />
+        android:textColor="#FFF"
+        android:textSize="17sp" />
 
     <com.hiteshsahu.tensorflow_android.view.custome_view.OverlayView
         android:id="@+id/debug_overlay"

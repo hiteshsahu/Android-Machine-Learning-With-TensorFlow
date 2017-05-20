@@ -44,7 +44,7 @@ public class TensorFlowMultiBoxDetector implements Classifier {
   // Only return this many results with at least this confidence.
   private static final int MAX_RESULTS = Integer.MAX_VALUE;
 
-  // Config values.
+  // AppConfig values.
   private String inputName;
   private int inputSize;
   private int imageMean;

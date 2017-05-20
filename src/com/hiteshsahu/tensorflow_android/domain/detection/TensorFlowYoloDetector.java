@@ -74,7 +74,7 @@ public class TensorFlowYoloDetector implements Classifier {
     "tvmonitor"
   };
 
-  // Config values.
+  // AppConfig values.
   private String inputName;
   private int inputSize;
 
