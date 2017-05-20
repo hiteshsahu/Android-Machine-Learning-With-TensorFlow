@@ -13,21 +13,23 @@
  See the License for the specific language governing permissions and
  limitations under the License.
 -->
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
     <com.hiteshsahu.tensorflow_android.view.custome_view.AutoFitTextureView
         android:id="@+id/texture"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:layout_alignParentBottom="true" />
 
-    <com.hiteshsahu.tensorflow_android.view.custome_view.RecognitionScoreView
+    <TextView
         android:id="@+id/results"
         android:layout_width="match_parent"
-        android:layout_height="112dp"
-        android:layout_alignParentTop="true" />
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="#80000000"
+        android:textColor="#FFF" />
 
     <com.hiteshsahu.tensorflow_android.view.custome_view.OverlayView
         android:id="@+id/debug_overlay"
@@ -35,4 +37,4 @@
         android:layout_height="match_parent"
         android:layout_alignParentBottom="true" />
 
-</RelativeLayout>
+</FrameLayout>

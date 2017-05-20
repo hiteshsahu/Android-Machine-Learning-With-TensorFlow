@@ -148,7 +148,8 @@ public abstract class BaseCameraActivity extends Activity implements OnImageAvai
 
   private void requestPermission() {
     if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-      if (shouldShowRequestPermissionRationale(PERMISSION_CAMERA) || shouldShowRequestPermissionRationale(PERMISSION_STORAGE)) {
+      if (shouldShowRequestPermissionRationale(PERMISSION_CAMERA)
+              || shouldShowRequestPermissionRationale(PERMISSION_STORAGE)) {
         Toast.makeText(BaseCameraActivity.this, "Camera AND storage permission are required for this demo", Toast.LENGTH_LONG).show();
       }
       requestPermissions(new String[] {PERMISSION_CAMERA, PERMISSION_STORAGE}, PERMISSIONS_REQUEST);

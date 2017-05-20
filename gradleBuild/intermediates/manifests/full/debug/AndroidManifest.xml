@@ -37,7 +37,7 @@
         android:label="@string/app_name"
         android:theme="@style/MaterialTheme" >
         <activity
-            android:name="com.hiteshsahu.tensorflow_android.view.activity.ClassifierActivity"
+            android:name="com.hiteshsahu.tensorflow_android.view.activity.ClassifierActivityBase"
             android:label="@string/activity_name_classification"
             android:screenOrientation="portrait" >
             <intent-filter>
@@ -47,7 +47,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.hiteshsahu.tensorflow_android.view.activity.DetectorActivity"
+            android:name="com.hiteshsahu.tensorflow_android.view.activity.DetectorActivityBase"
             android:label="@string/activity_name_detection"
             android:screenOrientation="portrait" >
             <intent-filter>
@@ -57,7 +57,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.hiteshsahu.tensorflow_android.view.activity.StylizeActivity"
+            android:name="com.hiteshsahu.tensorflow_android.view.activity.StylizeActivityBase"
             android:label="@string/activity_name_stylize"
             android:screenOrientation="portrait" >
             <intent-filter>
