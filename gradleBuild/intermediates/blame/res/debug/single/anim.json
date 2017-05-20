@@ -1,0 +1,94 @@
+[
+    {
+        "merged": "D:\\Git Clone Directory\\Machine-Learning-Android\\gradleBuild\\intermediates\\res\\merged\\debug\\anim\\design_fab_in.xml",
+        "source": "C:\\Users\\hitesh.sahu\\.android\\build-cache\\351e199e733f59e4cc40dc1b6311358e2bca54f8\\output\\res\\anim\\design_fab_in.xml"
+    },
+    {
+        "merged": "D:\\Git Clone Directory\\Machine-Learning-Android\\gradleBuild\\intermediates\\res\\merged\\debug\\anim\\fade_in.xml",
+        "source": "D:\\Git Clone Directory\\Machine-Learning-Android\\res\\anim\\fade_in.xml"
+    },
+    {
+        "merged": "D:\\Git Clone Directory\\Machine-Learning-Android\\gradleBuild\\intermediates\\res\\merged\\debug\\anim\\abc_shrink_fade_out_from_bottom.xml",
+        "source": "C:\\Users\\hitesh.sahu\\.android\\build-cache\\d1918f3fc73a53b0752b0514296ac705fe7f0ff3\\output\\res\\anim\\abc_shrink_fade_out_from_bottom.xml"
+    },
+    {
+        "merged": "D:\\Git Clone Directory\\Machine-Learning-Android\\gradleBuild\\intermediates\\res\\merged\\debug\\anim\\abc_slide_out_top.xml",
+        "source": "C:\\Users\\hitesh.sahu\\.android\\build-cache\\d1918f3fc73a53b0752b0514296ac705fe7f0ff3\\output\\res\\anim\\abc_slide_out_top.xml"
+    },
+    {
+        "merged": "D:\\Git Clone Directory\\Machine-Learning-Android\\gradleBuild\\intermediates\\res\\merged\\debug\\anim\\logo_animation_back.xml",
+        "source": "D:\\Git Clone Directory\\Machine-Learning-Android\\res\\anim\\logo_animation_back.xml"
+    },
+    {
+        "merged": "D:\\Git Clone Directory\\Machine-Learning-Android\\gradleBuild\\intermediates\\res\\merged\\debug\\anim\\logo_animation.xml",
+        "source": "D:\\Git Clone Directory\\Machine-Learning-Android\\res\\anim\\logo_animation.xml"
+    },
+    {
+        "merged": "D:\\Git Clone Directory\\Machine-Learning-Android\\gradleBuild\\intermediates\\res\\merged\\debug\\anim\\abc_slide_in_top.xml",
+        "source": "C:\\Users\\hitesh.sahu\\.android\\build-cache\\d1918f3fc73a53b0752b0514296ac705fe7f0ff3\\output\\res\\anim\\abc_slide_in_top.xml"
+    },
+    {
+        "merged": "D:\\Git Clone Directory\\Machine-Learning-Android\\gradleBuild\\intermediates\\res\\merged\\debug\\anim\\abc_grow_fade_in_from_bottom.xml",
+        "source": "C:\\Users\\hitesh.sahu\\.android\\build-cache\\d1918f3fc73a53b0752b0514296ac705fe7f0ff3\\output\\res\\anim\\abc_grow_fade_in_from_bottom.xml"
+    },
+    {
+        "merged": "D:\\Git Clone Directory\\Machine-Learning-Android\\gradleBuild\\intermediates\\res\\merged\\debug\\anim\\abc_fade_in.xml",
+        "source": "C:\\Users\\hitesh.sahu\\.android\\build-cache\\d1918f3fc73a53b0752b0514296ac705fe7f0ff3\\output\\res\\anim\\abc_fade_in.xml"
+    },
+    {
+        "merged": "D:\\Git Clone Directory\\Machine-Learning-Android\\gradleBuild\\intermediates\\res\\merged\\debug\\anim\\pro_animation_back.xml",
+        "source": "D:\\Git Clone Directory\\Machine-Learning-Android\\res\\anim\\pro_animation_back.xml"
+    },
+    {
+        "merged": "D:\\Git Clone Directory\\Machine-Learning-Android\\gradleBuild\\intermediates\\res\\merged\\debug\\anim\\abc_slide_in_bottom.xml",
+        "source": "C:\\Users\\hitesh.sahu\\.android\\build-cache\\d1918f3fc73a53b0752b0514296ac705fe7f0ff3\\output\\res\\anim\\abc_slide_in_bottom.xml"
+    },
+    {
+        "merged": "D:\\Git Clone Directory\\Machine-Learning-Android\\gradleBuild\\intermediates\\res\\merged\\debug\\anim\\abc_popup_exit.xml",
+        "source": "C:\\Users\\hitesh.sahu\\.android\\build-cache\\d1918f3fc73a53b0752b0514296ac705fe7f0ff3\\output\\res\\anim\\abc_popup_exit.xml"
+    },
+    {
+        "merged": "D:\\Git Clone Directory\\Machine-Learning-Android\\gradleBuild\\intermediates\\res\\merged\\debug\\anim\\abc_fade_out.xml",
+        "source": "C:\\Users\\hitesh.sahu\\.android\\build-cache\\d1918f3fc73a53b0752b0514296ac705fe7f0ff3\\output\\res\\anim\\abc_fade_out.xml"
+    },
+    {
+        "merged": "D:\\Git Clone Directory\\Machine-Learning-Android\\gradleBuild\\intermediates\\res\\merged\\debug\\anim\\abc_popup_enter.xml",
+        "source": "C:\\Users\\hitesh.sahu\\.android\\build-cache\\d1918f3fc73a53b0752b0514296ac705fe7f0ff3\\output\\res\\anim\\abc_popup_enter.xml"
+    },
+    {
+        "merged": "D:\\Git Clone Directory\\Machine-Learning-Android\\gradleBuild\\intermediates\\res\\merged\\debug\\anim\\app_name_animation_back.xml",
+        "source": "D:\\Git Clone Directory\\Machine-Learning-Android\\res\\anim\\app_name_animation_back.xml"
+    },
+    {
+        "merged": "D:\\Git Clone Directory\\Machine-Learning-Android\\gradleBuild\\intermediates\\res\\merged\\debug\\anim\\app_name_animation.xml",
+        "source": "D:\\Git Clone Directory\\Machine-Learning-Android\\res\\anim\\app_name_animation.xml"
+    },
+    {
+        "merged": "D:\\Git Clone Directory\\Machine-Learning-Android\\gradleBuild\\intermediates\\res\\merged\\debug\\anim\\design_snackbar_out.xml",
+        "source": "C:\\Users\\hitesh.sahu\\.android\\build-cache\\351e199e733f59e4cc40dc1b6311358e2bca54f8\\output\\res\\anim\\design_snackbar_out.xml"
+    },
+    {
+        "merged": "D:\\Git Clone Directory\\Machine-Learning-Android\\gradleBuild\\intermediates\\res\\merged\\debug\\anim\\pro_animation.xml",
+        "source": "D:\\Git Clone Directory\\Machine-Learning-Android\\res\\anim\\pro_animation.xml"
+    },
+    {
+        "merged": "D:\\Git Clone Directory\\Machine-Learning-Android\\gradleBuild\\intermediates\\res\\merged\\debug\\anim\\donot_move.xml",
+        "source": "D:\\Git Clone Directory\\Machine-Learning-Android\\res\\anim\\donot_move.xml"
+    },
+    {
+        "merged": "D:\\Git Clone Directory\\Machine-Learning-Android\\gradleBuild\\intermediates\\res\\merged\\debug\\anim\\design_fab_out.xml",
+        "source": "C:\\Users\\hitesh.sahu\\.android\\build-cache\\351e199e733f59e4cc40dc1b6311358e2bca54f8\\output\\res\\anim\\design_fab_out.xml"
+    },
+    {
+        "merged": "D:\\Git Clone Directory\\Machine-Learning-Android\\gradleBuild\\intermediates\\res\\merged\\debug\\anim\\design_snackbar_in.xml",
+        "source": "C:\\Users\\hitesh.sahu\\.android\\build-cache\\351e199e733f59e4cc40dc1b6311358e2bca54f8\\output\\res\\anim\\design_snackbar_in.xml"
+    },
+    {
+        "merged": "D:\\Git Clone Directory\\Machine-Learning-Android\\gradleBuild\\intermediates\\res\\merged\\debug\\anim\\fade_out.xml",
+        "source": "D:\\Git Clone Directory\\Machine-Learning-Android\\res\\anim\\fade_out.xml"
+    },
+    {
+        "merged": "D:\\Git Clone Directory\\Machine-Learning-Android\\gradleBuild\\intermediates\\res\\merged\\debug\\anim\\abc_slide_out_bottom.xml",
+        "source": "C:\\Users\\hitesh.sahu\\.android\\build-cache\\d1918f3fc73a53b0752b0514296ac705fe7f0ff3\\output\\res\\anim\\abc_slide_out_bottom.xml"
+    }
+]

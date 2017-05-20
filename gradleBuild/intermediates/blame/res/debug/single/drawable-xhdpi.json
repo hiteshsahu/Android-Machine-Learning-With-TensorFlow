@@ -1,15 +1,7 @@
 [
     {
-        "merged": "C:\\Users\\hitesh.sahu\\Downloads\\tensorflow-master\\tensorflow-master\\tensorflow\\examples\\android\\gradleBuild\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_action_info.png",
-        "source": "C:\\Users\\hitesh.sahu\\Downloads\\tensorflow-master\\tensorflow-master\\tensorflow\\examples\\android\\res\\drawable-xhdpi\\ic_action_info.png"
-    },
-    {
         "merged": "D:\\Git Clone Directory\\Machine-Learning-Android\\gradleBuild\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_launcher.png",
         "source": "D:\\Git Clone Directory\\Machine-Learning-Android\\res\\drawable-xhdpi\\ic_launcher.png"
-    },
-    {
-        "merged": "C:\\Users\\hitesh.sahu\\Downloads\\tensorflow-master\\tensorflow-master\\tensorflow\\examples\\android\\gradleBuild\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_launcher.png",
-        "source": "C:\\Users\\hitesh.sahu\\Downloads\\tensorflow-master\\tensorflow-master\\tensorflow\\examples\\android\\res\\drawable-xhdpi\\ic_launcher.png"
     },
     {
         "merged": "D:\\Git Clone Directory\\Machine-Learning-Android\\gradleBuild\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\ic_action_info.png",

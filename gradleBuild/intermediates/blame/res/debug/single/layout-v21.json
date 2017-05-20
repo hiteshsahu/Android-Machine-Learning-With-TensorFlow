@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "D:\\Git Clone Directory\\Machine-Learning-Android\\gradleBuild\\intermediates\\res\\merged\\debug\\layout-v21\\notification_template_icon_group.xml",
+        "source": "C:\\Users\\hitesh.sahu\\.android\\build-cache\\d1918f3fc73a53b0752b0514296ac705fe7f0ff3\\output\\res\\layout-v21\\notification_template_icon_group.xml"
+    },
+    {
+        "merged": "D:\\Git Clone Directory\\Machine-Learning-Android\\gradleBuild\\intermediates\\res\\merged\\debug\\layout-v21\\notification_template_custom_big.xml",
+        "source": "C:\\Users\\hitesh.sahu\\.android\\build-cache\\d1918f3fc73a53b0752b0514296ac705fe7f0ff3\\output\\res\\layout-v21\\notification_template_custom_big.xml"
+    },
+    {
+        "merged": "D:\\Git Clone Directory\\Machine-Learning-Android\\gradleBuild\\intermediates\\res\\merged\\debug\\layout-v21\\notification_action_tombstone.xml",
+        "source": "C:\\Users\\hitesh.sahu\\.android\\build-cache\\d1918f3fc73a53b0752b0514296ac705fe7f0ff3\\output\\res\\layout-v21\\notification_action_tombstone.xml"
+    },
+    {
+        "merged": "D:\\Git Clone Directory\\Machine-Learning-Android\\gradleBuild\\intermediates\\res\\merged\\debug\\layout-v21\\notification_action.xml",
+        "source": "C:\\Users\\hitesh.sahu\\.android\\build-cache\\d1918f3fc73a53b0752b0514296ac705fe7f0ff3\\output\\res\\layout-v21\\notification_action.xml"
+    }
+]

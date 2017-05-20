@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instant-run
+    abi="arm64-v8a,armeabi-v7a,armeabi"
+    api-level="23"
+    build-mode="FULL"
+    density="xxhdpi"
+    format="10"
+    plugin-version="2.3.0"
+    timestamp="1495261177811"
+    token="7923037988754782611"
+    verifier="FULL_BUILD_REQUESTED" >
+
+    <task
+        name="javac"
+        duration="1895" />
+    <task
+        name="instant-run-dex"
+        duration="0" />
+    <task
+        name="instant-run-transform"
+        duration="2144" />
+    <task
+        name="verifier"
+        duration="868" />
+
+    <artifact
+        location="D:\Git Clone Directory\Machine-Learning-Android\gradleBuild\outputs\apk\Machine-Learning-Android-debug.apk"
+        type="MAIN" />
+
+    <build
+        build-mode="FULL"
+        timestamp="1495261177811"
+        verifier="FULL_BUILD_REQUESTED" >
+        <artifact
+            location="D:\Git Clone Directory\Machine-Learning-Android\gradleBuild\outputs\apk\Machine-Learning-Android-debug.apk"
+            type="MAIN" />
+    </build>
+
+</instant-run>

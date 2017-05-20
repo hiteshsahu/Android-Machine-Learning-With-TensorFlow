@@ -47,7 +47,7 @@ import android.widget.GridView;
 import android.widget.ImageView;
 import android.widget.Toast;
 
-import com.hiteshsahu.tensorflow_android.utils.AppConfig;
+import com.hiteshsahu.tensorflow_android.AppConfig;
 import com.hiteshsahu.tensorflow_android.utils.BorderedText;
 import com.hiteshsahu.tensorflow_android.utils.ImageUtils;
 import com.hiteshsahu.tensorflow_android.utils.Logger;
@@ -313,7 +313,7 @@ public class StylizeActivityBase extends BaseCameraActivity implements OnImageAv
         borderedText = new BorderedText(textSizePx);
         borderedText.setTypeface(Typeface.MONOSPACE);
 
-        inferenceInterface = new TensorFlowInferenceInterface(getAssets(), AppConfig.MODEL_STYLING);
+        inferenceInterface = new TensorFlowInferenceInterface(getAssets(), AppConfig.STYLING_MODEL_FILE);
 
         previewWidth = size.getWidth();
         previewHeight = size.getHeight();

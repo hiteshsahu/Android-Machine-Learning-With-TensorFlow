@@ -2,13 +2,22 @@
 <items version="2" >
 
     <item
-        is-multidex="false"
-        jar="C:\Users\hitesh.sahu\.android\build-cache\f5f9593ac5eb8d851ff781395bd65517d13073ee\output\jars\classes.jar"
-        jumboMode="false"
+        is-multidex="true"
+        jar="D:\Git Clone Directory\Machine-Learning-Android\gradleBuild\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
         optimize="true"
-        revision="25.0.2"
-        sha1="547326950573bb73d6064506e003a201045b2bd7">
-        <dex dex="C:\Users\hitesh.sahu\Downloads\tensorflow-master\tensorflow-master\tensorflow\examples\android\gradleBuild\intermediates\pre-dexed\debug\classes_edeb7f1dab9da84cdc7507c81c1f53bab86d5f0d.jar" />
+        revision="25.0.3"
+        sha1="a44074fbfa4e554286f147a95a80401959d31ae0">
+        <dex dex="D:\Git Clone Directory\Machine-Learning-Android\gradleBuild\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_34cb00b30f45de17e7e8e1341539c0308eeb68d3\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Git Clone Directory\Machine-Learning-Android\gradleBuild\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="c323c36ecc68965c4cfb460f7721113d2b61ed03">
+        <dex dex="D:\Git Clone Directory\Machine-Learning-Android\gradleBuild\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_828a98213a1d892c01ff5a8c8c8dec59c679f0dd\classes.dex" />
     </item>
 
 </items>

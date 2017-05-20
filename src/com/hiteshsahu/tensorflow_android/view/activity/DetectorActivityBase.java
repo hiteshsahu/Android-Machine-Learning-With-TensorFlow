@@ -39,7 +39,7 @@ import com.hiteshsahu.tensorflow_android.domain.detection.Classifier;
 import com.hiteshsahu.tensorflow_android.domain.detection.TensorFlowMultiBoxDetector;
 import com.hiteshsahu.tensorflow_android.domain.detection.TensorFlowYoloDetector;
 import com.hiteshsahu.tensorflow_android.domain.tracking.MultiBoxTracker;
-import com.hiteshsahu.tensorflow_android.utils.AppConfig;
+import com.hiteshsahu.tensorflow_android.AppConfig;
 import com.hiteshsahu.tensorflow_android.utils.BorderedText;
 import com.hiteshsahu.tensorflow_android.utils.ImageUtils;
 import com.hiteshsahu.tensorflow_android.utils.Logger;
@@ -67,16 +67,9 @@ public class DetectorActivityBase extends BaseCameraActivity implements OnImageA
     private static final String MB_OUTPUT_LOCATIONS_NAME = "output_locations/Reshape";
     private static final String MB_OUTPUT_SCORES_NAME = "output_scores/Reshape";
 
-
-    // Configuration values for tiny-yolo-voc. Note that the graph is not included with TensorFlow and
-    // must be manually placed in the assets/ directory by the user.
-    // Graphs and models downloaded from http://pjreddie.com/darknet/yolo/ may be converted e.g. via
-    // DarkFlow (https://github.com/thtrieu/darkflow). Sample command:
-    // ./flow --model cfg/tiny-yolo-voc.cfg --load bin/tiny-yolo-voc.weights --savepb --verbalise=True
-    private static final String YOLO_MODEL_FILE = "file:///android_asset/graph-tiny-yolo-voc.pb";
-    private static final int YOLO_INPUT_SIZE = 416;
     private static final String YOLO_INPUT_NAME = "input";
     private static final String YOLO_OUTPUT_NAMES = "output";
+    private static final int YOLO_INPUT_SIZE = 416;
     private static final int YOLO_BLOCK_SIZE = 32;
 
     // Default to the included multibox model.
@@ -136,7 +129,7 @@ public class DetectorActivityBase extends BaseCameraActivity implements OnImageA
             detector =
                     TensorFlowYoloDetector.create(
                             getAssets(),
-                            YOLO_MODEL_FILE,
+                            AppConfig.YOLO_MODEL_FILE,
                             YOLO_INPUT_SIZE,
                             YOLO_INPUT_NAME,
                             YOLO_OUTPUT_NAMES,
@@ -145,8 +138,8 @@ public class DetectorActivityBase extends BaseCameraActivity implements OnImageA
             detector =
                     TensorFlowMultiBoxDetector.create(
                             getAssets(),
-                            AppConfig.MODEL_MB_LOCATION_DETECTION,
-                            AppConfig.LABEL_MB_LOCATION_DETECTION,
+                            AppConfig.MB_PERSON_LOCATION_DETECTION_MODEL_FILE,
+                            AppConfig.LABEL_MB_PERSON_LOCATION_DETECTION,
                             MB_IMAGE_MEAN,
                             MB_IMAGE_STD,
                             MB_INPUT_NAME,

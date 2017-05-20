@@ -33,9 +33,9 @@ import android.util.TypedValue;
 import android.view.Display;
 import android.widget.TextView;
 
+import com.hiteshsahu.tensorflow_android.AppConfig;
 import com.hiteshsahu.tensorflow_android.domain.detection.Classifier;
 import com.hiteshsahu.tensorflow_android.domain.detection.TensorFlowImageClassifier;
-import com.hiteshsahu.tensorflow_android.utils.AppConfig;
 import com.hiteshsahu.tensorflow_android.utils.BorderedText;
 import com.hiteshsahu.tensorflow_android.utils.ImageUtils;
 import com.hiteshsahu.tensorflow_android.utils.Logger;
@@ -67,6 +67,7 @@ public class ClassifierActivityBase extends BaseCameraActivity implements OnImag
     // --input_binary=true
 
     private static final float IMAGE_STD = 1;
+
     private static final String INPUT_NAME = "input";
     private static final String OUTPUT_NAME = "output";
 
@@ -96,11 +97,11 @@ public class ClassifierActivityBase extends BaseCameraActivity implements OnImag
     private Matrix frameToCropTransform;
     private Matrix cropToFrameTransform;
 
-    private TextView resultsView;
-
     private BorderedText borderedText;
 
     private long lastProcessingTimeMs;
+
+    TextView resultsView;
 
     @Override
     protected int getLayoutId() {
@@ -125,7 +126,7 @@ public class ClassifierActivityBase extends BaseCameraActivity implements OnImag
         classifier =
                 TensorFlowImageClassifier.create(
                         getAssets(),
-                        AppConfig.MODEL_OBJECT_CLASSIFICATION,
+                        AppConfig.OBJECT_CLASSIFICATION_MODEL_FILE,
                         AppConfig.LABEL_OBJECT_CLASSIFICATION,
                         AppConfig.INPUT_SIZE,
                         AppConfig.IMAGE_MEAN,
