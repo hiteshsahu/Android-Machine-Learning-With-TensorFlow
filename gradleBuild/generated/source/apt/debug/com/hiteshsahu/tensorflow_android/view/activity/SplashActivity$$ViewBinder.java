@@ -14,12 +14,12 @@ public class SplashActivity$$ViewBinder<T extends SplashActivity> implements Vie
   public Unbinder bind(final Finder finder, final T target, Object source) {
     InnerUnbinder unbinder = createUnbinder(target);
     View view;
-    view = finder.findRequiredView(source, 2131492984, "field 'appSlogan'");
-    target.appSlogan = finder.castView(view, 2131492984, "field 'appSlogan'");
-    view = finder.findRequiredView(source, 2131492983, "field 'appTitle'");
-    target.appTitle = finder.castView(view, 2131492983, "field 'appTitle'");
-    view = finder.findRequiredView(source, 2131492982, "field 'logo'");
-    target.logo = finder.castView(view, 2131492982, "field 'logo'");
+    view = finder.findRequiredView(source, 2131492991, "field 'appSlogan'");
+    target.appSlogan = finder.castView(view, 2131492991, "field 'appSlogan'");
+    view = finder.findRequiredView(source, 2131492990, "field 'appTitle'");
+    target.appTitle = finder.castView(view, 2131492990, "field 'appTitle'");
+    view = finder.findRequiredView(source, 2131492989, "field 'logo'");
+    target.logo = finder.castView(view, 2131492989, "field 'logo'");
     return unbinder;
   }
 

@@ -52,6 +52,16 @@
             </intent-filter>
         </activity>
         <activity
+            android:name="com.hiteshsahu.tensorflow_android.view.activity.LandingActivity"
+            android:label="@string/activity_name_classification"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name="com.hiteshsahu.tensorflow_android.view.activity.ClassifierActivityBase"
             android:label="@string/activity_name_classification"
             android:screenOrientation="portrait" >

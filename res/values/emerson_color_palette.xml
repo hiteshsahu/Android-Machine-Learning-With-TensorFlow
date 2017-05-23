@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--Emerson Color Palette-->
+    <color name="emerson_corporate">#004b8d</color>
+    <color name="emerson_yellow_lighting">#ffcf22</color>
+    <color name="emerson_orange_buckthorn">#faa634</color>
+    <color name="emerson_orange_buckthorn_dark">#f79428</color>
+    <color name="emerson_crimson">#d31245</color>
+    <color name="emerson_razzmatazz">#e30a7c</color>
+    <color name="emerson_red_violet">#ca3092</color>
+    <color name="emerson_violet">#a81c88</color>
+    <color name="emerson_eminence">#6e298d</color>
+    <color name="emerson_blue_cerulean">#00afe9</color>
+    <color name="emerson_blue_pacific">#0091d0</color>
+    <color name="emerson_blue_lochmara">#0079c1</color>
+    <color name="emerson_blue_sky">#00a4d2</color>
+    <color name="emerson_green_wattle">#c3d941</color>
+    <color name="emerson_green_wild_willow">#a0cf67</color>
+    <color name="emerson_green_apple">#62bb46</color>
+    <color name="emerson_green_jade">#00aa7e</color>
+
+</resources>

@@ -344,7 +344,7 @@ public class DetectorActivityBase extends BaseCameraActivity implements OnImageA
     }
 
     @Override
-    protected int getLayoutId() {
+    protected int getFragmentLayoutId() {
         return R.layout.camera_connection_fragment_tracking;
     }
 

@@ -17,6 +17,7 @@
       android:orientation="vertical"
       android:layout_width="match_parent"
       android:layout_height="match_parent">
+
   <com.hiteshsahu.tensorflow_android.view.custome_view.AutoFitTextureView
     android:id="@+id/texture"
     android:layout_width="wrap_content"

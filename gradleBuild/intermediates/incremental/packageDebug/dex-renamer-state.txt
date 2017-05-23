@@ -1,4 +1,4 @@
-#Sat May 20 12:13:36 IST 2017
+#Tue May 23 13:04:12 IST 2017
 base.0=D\:\\Git Clone Directory\\Machine-Learning-Android\\gradleBuild\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main
 renamed.0=classes.dex
 file.0=D\:\\Git Clone Directory\\Machine-Learning-Android\\gradleBuild\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main\\classes.dex

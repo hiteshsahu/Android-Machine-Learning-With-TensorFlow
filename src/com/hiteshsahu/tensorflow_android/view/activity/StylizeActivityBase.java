@@ -185,7 +185,7 @@ public class StylizeActivityBase extends BaseCameraActivity implements OnImageAv
     }
 
     @Override
-    protected int getLayoutId() {
+    protected int getFragmentLayoutId() {
         return R.layout.camera_connection_fragment_stylize;
     }
 

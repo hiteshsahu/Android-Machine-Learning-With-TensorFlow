@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/appRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:context="view.activities.LandingActivity"
+        tools:showIn="@layout/activity_landing">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/emerson_green_jade"
+                app:layout_collapseMode="pin"
+                app:title="TensorFlow Demo"
+                app:titleTextColor="#FFF" />
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/classification"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:layout_toRightOf="@+id/fab"
+                android:background="@color/emerson_blue_cerulean"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Object Classification"
+                android:textColor="#FFF"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/detection"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_margin="10dp"
+                android:background="@color/emerson_crimson"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Person Detection"
+                android:textColor="#FFF"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/styling"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_margin="10dp"
+                android:background="@color/emerson_orange_buckthorn_dark"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text=" Styling"
+                android:textColor="#FFF"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/view_webform"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_margin="10dp"
+                android:background="@color/emerson_blue_pacific"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text=" Open Web Form  "
+                android:textColor="#FFF"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.design.widget.CoordinatorLayout>

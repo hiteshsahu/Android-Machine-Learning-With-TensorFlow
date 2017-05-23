@@ -8,8 +8,8 @@ package com.hiteshsahu.tensorflow_android;
 
 public interface AppConfig {
 
-    int INPUT_SIZE = 224;
     int IMAGE_MEAN = 117;
+    int INPUT_SIZE = 224;
 
     // These are the settings for the original v1 Inception model. If you want to
     // use a model that's been produced from the TensorFlow for Poets codelab,

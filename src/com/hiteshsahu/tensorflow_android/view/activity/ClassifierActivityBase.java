@@ -104,7 +104,7 @@ public class ClassifierActivityBase extends BaseCameraActivity implements OnImag
     TextView resultsView;
 
     @Override
-    protected int getLayoutId() {
+    protected int getFragmentLayoutId() {
         return R.layout.camera_connection_fragment;
     }
 
@@ -170,6 +170,10 @@ public class ClassifierActivityBase extends BaseCameraActivity implements OnImag
                 });
     }
 
+    /**
+     * , Callback fires for every new frame available from ImageReader.
+     * @param reader
+     */
     @Override
     public void onImageAvailable(final ImageReader reader) {
         Image image = null;
@@ -189,12 +193,19 @@ public class ClassifierActivityBase extends BaseCameraActivity implements OnImag
 
             Trace.beginSection("imageAvailable");
 
+            //Get the array of pixel planes for this Image.
             final Plane[] planes = image.getPlanes();
+
             fillBytes(planes, yuvBytes);
 
+            //This is the distance between two consecutive pixel values in a row of pixels
+
+            // The Y component determines the brightness of the color (referred to as luminance or luma),
             final int yRowStride = planes[0].getRowStride();
+            //U and V components determine the color itself (the chroma).
             final int uvRowStride = planes[1].getRowStride();
             final int uvPixelStride = planes[1].getPixelStride();
+
             ImageUtils.convertYUV420ToARGB8888(
                     yuvBytes[0],
                     yuvBytes[1],
@@ -206,6 +217,9 @@ public class ClassifierActivityBase extends BaseCameraActivity implements OnImag
                     uvPixelStride,
                     rgbBytes);
 
+            // Since Images are often directly produced or
+            // consumed by hardware components, they are a limited resource shared across the system,
+            // and should be closed as soon as they are no longer needed.
             image.close();
         } catch (final Exception e) {
             if (image != null) {
@@ -217,6 +231,7 @@ public class ClassifierActivityBase extends BaseCameraActivity implements OnImag
         }
 
         rgbFrameBitmap.setPixels(rgbBytes, 0, previewWidth, 0, 0, previewWidth, previewHeight);
+
         final Canvas canvas = new Canvas(croppedBitmap);
         canvas.drawBitmap(rgbFrameBitmap, frameToCropTransform, null);
 

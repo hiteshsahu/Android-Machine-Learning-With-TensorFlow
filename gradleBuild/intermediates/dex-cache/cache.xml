@@ -2,22 +2,130 @@
 <items version="2" >
 
     <item
-        is-multidex="true"
-        jar="D:\Git Clone Directory\Machine-Learning-Android\gradleBuild\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="C:\Users\hitesh.sahu\.android\build-cache\e7a8de66b92916693a2d999a9616e79f46ff6d52\output\jars\classes.jar"
+        jumboMode="false"
         optimize="true"
         revision="25.0.3"
-        sha1="a44074fbfa4e554286f147a95a80401959d31ae0">
-        <dex dex="D:\Git Clone Directory\Machine-Learning-Android\gradleBuild\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_34cb00b30f45de17e7e8e1341539c0308eeb68d3\classes.dex" />
+        sha1="4b746ef0fd46acb5aaf3d9ab9a4cec22c28d3211">
+        <dex dex="D:\Git Clone Directory\Machine-Learning-Android\gradleBuild\intermediates\pre-dexed\debug\classes_a506582b500539864a7e631bdd13f7a905d11bdf.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="D:\Git Clone Directory\Machine-Learning-Android\gradleBuild\intermediates\incremental-runtime-classes\debug\instant-run.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="C:\Users\hitesh.sahu\.android\build-cache\dec5a1975fb6ebceb995d3c2277b198dd85aebe0\output\jars\classes.jar"
+        jumboMode="false"
         optimize="true"
         revision="25.0.3"
-        sha1="c323c36ecc68965c4cfb460f7721113d2b61ed03">
-        <dex dex="D:\Git Clone Directory\Machine-Learning-Android\gradleBuild\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_828a98213a1d892c01ff5a8c8c8dec59c679f0dd\classes.dex" />
+        sha1="93c1199fcb0a34b980e6fff8350daff62e696ec2">
+        <dex dex="D:\Git Clone Directory\Machine-Learning-Android\gradleBuild\intermediates\pre-dexed\debug\classes_d2720ffd78f3a8ceab6eac266809a66be43b09df.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\hitesh.sahu\.android\build-cache\3e9cec4b5cdc927db83831b22c73d4d0184e3ad7\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="a3e61044038fb54cddf6b8dc79f41d2b57f42caf">
+        <dex dex="D:\Git Clone Directory\Machine-Learning-Android\gradleBuild\intermediates\pre-dexed\debug\classes_911438f47ea3fba37b014cf52619b1186c6b401f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\hitesh.sahu\.android\build-cache\6f6461684543d2bce8e6b41c5aceb331d9d69e0e\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="d6a04527c17597019dad82777c5094a3d60d1c33">
+        <dex dex="D:\Git Clone Directory\Machine-Learning-Android\gradleBuild\intermediates\pre-dexed\debug\classes_6f2456d331f1e08e2faab0098bf7693fe6266a38.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\hitesh.sahu\.android\build-cache\5347a17bdc0a4a87f16db674710dcb2c902d0c31\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="c5d103b270b3f3b50d8e6b44aa8e068b0de33426">
+        <dex dex="D:\Git Clone Directory\Machine-Learning-Android\gradleBuild\intermediates\pre-dexed\debug\classes_a4dd1ae8c06a7a23c793aad0d2fcec6c857cc441.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\hitesh.sahu\.android\build-cache\5a9efc6322f4c2563547cb224c83a64b0c1e61c7\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="D:\Git Clone Directory\Machine-Learning-Android\gradleBuild\intermediates\pre-dexed\debug\classes_db97286d3253c896962b6f771dae589f29aae82d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\hitesh.sahu\.android\build-cache\9b7aae9806ae09eb446e4c115ad85279563d7a65\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="fbb206f7a119f66ce171d95aae1225a5b209a8b7">
+        <dex dex="D:\Git Clone Directory\Machine-Learning-Android\gradleBuild\intermediates\pre-dexed\debug\classes_3bc712a2d23e4bbb6bce0cd7bd22ee92e9128d8e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\hitesh.sahu\.android\build-cache\d5f87acdf9af88630c5d9cd7d09fc96ccda9235d\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="5cc5ef8347a6bafa14556cbd35230aa9b3431bb0">
+        <dex dex="D:\Git Clone Directory\Machine-Learning-Android\gradleBuild\intermediates\pre-dexed\debug\classes_0e98c528808f6943258a0e83e5e3c3f733bbcb63.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\hitesh.sahu\.android\build-cache\f6e043d183d3fefc886e260632ccb9aabfa8e3cf\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="ec3360994c4007c282a4b651723603e82682b601">
+        <dex dex="D:\Git Clone Directory\Machine-Learning-Android\gradleBuild\intermediates\pre-dexed\debug\classes_39b87333cfeb2102ef6ee1361059af3ea31584db.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\hitesh.sahu\.android\build-cache\f23d6e08cc087362f7d20f0cccdf107a60f32aed\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="425c7b17887e5c3f8cbdf67ba171bc246f29b42c">
+        <dex dex="D:\Git Clone Directory\Machine-Learning-Android\gradleBuild\intermediates\pre-dexed\debug\classes_882584b673a042938c49d942c2ad5028c0cef35b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\hitesh.sahu\.android\build-cache\a3c061c19cead38a2993fc82150e176bea1fa22f\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="9ab787a20aae245b5b3651ae0b9c38459eb37715">
+        <dex dex="D:\Git Clone Directory\Machine-Learning-Android\gradleBuild\intermediates\pre-dexed\debug\classes_a822bee7e645b73ab009835262040cb5ce71e1ed.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\hitesh.sahu\.android\build-cache\7cf50db23e9eda6e110903c853b36b91e7e6864f\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="93c10d68ab5ea070f15782ae6d3a28d1f1d8f45e">
+        <dex dex="D:\Git Clone Directory\Machine-Learning-Android\gradleBuild\intermediates\pre-dexed\debug\classes_59155bdbe9969ab3c67b968fd8cc45541c7ad530.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\hitesh.sahu\.android\build-cache\f8dd05be539efc1c2cdc142753b4942c4dd848fc\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="70f23cb87278f89aa51e6f57e8f0fd5266572d95">
+        <dex dex="D:\Git Clone Directory\Machine-Learning-Android\gradleBuild\intermediates\pre-dexed\debug\classes_2105bc74a56baa725ad3c8bae7c41197a226e1a5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\hitesh.sahu\.android\build-cache\2b73c66726394dfd63edc38439c421da67713735\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="518768f3200963fbfec652f498da2c9d39245234">
+        <dex dex="D:\Git Clone Directory\Machine-Learning-Android\gradleBuild\intermediates\pre-dexed\debug\classes_9ace714287c9a35462927416d1dbb98d3ecbc43c.jar" />
     </item>
 
 </items>

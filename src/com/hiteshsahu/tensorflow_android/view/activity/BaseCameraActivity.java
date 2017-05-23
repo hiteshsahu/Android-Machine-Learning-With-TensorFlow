@@ -16,8 +16,6 @@
 
 package com.hiteshsahu.tensorflow_android.view.activity;
 
-import android.animation.Animator;
-import android.animation.AnimatorListenerAdapter;
 import android.media.Image.Plane;
 import android.media.ImageReader.OnImageAvailableListener;
 import android.os.Build;
@@ -30,7 +28,6 @@ import android.view.KeyEvent;
 import android.view.View;
 import android.view.ViewTreeObserver;
 import android.view.WindowManager;
-import android.widget.Toast;
 
 import com.hiteshsahu.tensorflow_android.utils.Animatrix;
 import com.hiteshsahu.tensorflow_android.utils.Logger;
@@ -46,29 +43,29 @@ import butterknife.ButterKnife;
 
 public abstract class BaseCameraActivity extends AppCompatActivity implements OnImageAvailableListener {
     private static final Logger LOGGER = new Logger();
-    private long lastBackPressTime;
+
     private boolean debug = false;
     private Handler handler;
     private HandlerThread handlerThread;
 
-    @BindView(R.id.container)
+    @BindView(R.id.frag_container)
     View fragContainer;
+
     @Override
     protected void onCreate(final Bundle savedInstanceState) {
         LOGGER.d("onCreate " + this);
         super.onCreate(null);
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
-
         setContentView(R.layout.activity_camera);
         ButterKnife.bind(this);
 
+        //Animate Circular Reveal on APp Start
         fragContainer.setVisibility(View.INVISIBLE);
         ViewTreeObserver viewTreeObserver = fragContainer.getViewTreeObserver();
         if (viewTreeObserver.isAlive()) {
             viewTreeObserver.addOnGlobalLayoutListener(new ViewTreeObserver.OnGlobalLayoutListener() {
                 @Override
                 public void onGlobalLayout() {
-
                     Animatrix.circularRevealView(fragContainer);
                     if (Build.VERSION.SDK_INT < Build.VERSION_CODES.JELLY_BEAN) {
                         fragContainer.getViewTreeObserver().removeGlobalOnLayoutListener(this);
@@ -79,9 +76,10 @@ public abstract class BaseCameraActivity extends AppCompatActivity implements On
             });
         }
 
+        //Display fragment according to current Activity
         getFragmentManager()
                 .beginTransaction()
-                .replace(R.id.container,
+                .replace(R.id.frag_container,
                         CameraConnectionFragment.newInstance(
                                 new CameraConnectionFragment.ConnectionCallback() {
                                     @Override
@@ -91,10 +89,84 @@ public abstract class BaseCameraActivity extends AppCompatActivity implements On
                                     }
                                 },
                                 this,
-                                getLayoutId(),
+                                getFragmentLayoutId(),
                                 getDesiredPreviewFrameSize()))
                 .commit();
     }
+
+    /**
+     * DO image processing in Background Thread
+     * @param runnable
+     */
+    protected synchronized void runInBackground(final Runnable runnable) {
+        if (handler != null) {
+            handler.post(runnable);
+        }
+    }
+
+    /**
+     * Extract YUB data from pixel plane array
+     * @param planes array of pixel planes for this Image.
+     * @param yuvBytes extracted YUV data from plane array
+     */
+    protected void fillBytes(final Plane[] planes, final byte[][] yuvBytes) {
+        // Because of the variable row stride it's not possible to know in
+        // advance the actual necessary dimensions of the yuv planes.
+
+        for (int i = 0; i < planes.length; ++i) {
+            final ByteBuffer buffer = planes[i].getBuffer();
+
+            if (yuvBytes[i] == null) {
+                LOGGER.d("Initializing buffer %d at size %d", i, buffer.capacity());
+                yuvBytes[i] = new byte[buffer.capacity()];
+            }
+
+            buffer.get(yuvBytes[i]);
+        }
+    }
+
+    public boolean isDebug() {
+        return debug;
+    }
+
+    public void requestRender() {
+        final OverlayView overlay = (OverlayView) findViewById(R.id.debug_overlay);
+        if (overlay != null) {
+            overlay.postInvalidate();
+        }
+    }
+
+    public void addCallback(final OverlayView.DrawCallback callback) {
+        final OverlayView overlay = (OverlayView) findViewById(R.id.debug_overlay);
+        if (overlay != null) {
+            overlay.addCallback(callback);
+        }
+    }
+
+    /**
+     * Enable Debugging and display system logs in overlay window
+     * @param debug
+     */
+    public void onSetDebug(final boolean debug) {
+    }
+
+    @Override
+    public boolean onKeyDown(final int keyCode, final KeyEvent event) {
+        if (keyCode == KeyEvent.KEYCODE_VOLUME_DOWN || keyCode == KeyEvent.KEYCODE_VOLUME_UP) {
+            debug = !debug;
+            requestRender();
+            onSetDebug(debug);
+            return true;
+        }
+        return super.onKeyDown(keyCode, event);
+    }
+
+    protected abstract void onPreviewSizeChosen(final Size size, final int rotation);
+
+    protected abstract int getFragmentLayoutId();
+
+    protected abstract Size getDesiredPreviewFrameSize();
+
 
     @Override
     public synchronized void onStart() {
@@ -145,100 +217,4 @@ public abstract class BaseCameraActivity extends AppCompatActivity implements On
         super.onDestroy();
     }
 
-    protected synchronized void runInBackground(final Runnable r) {
-        if (handler != null) {
-            handler.post(r);
-        }
-    }
-
-    protected void fillBytes(final Plane[] planes, final byte[][] yuvBytes) {
-        // Because of the variable row stride it's not possible to know in
-        // advance the actual necessary dimensions of the yuv planes.
-        for (int i = 0; i < planes.length; ++i) {
-            final ByteBuffer buffer = planes[i].getBuffer();
-            if (yuvBytes[i] == null) {
-                LOGGER.d("Initializing buffer %d at size %d", i, buffer.capacity());
-                yuvBytes[i] = new byte[buffer.capacity()];
-            }
-            buffer.get(yuvBytes[i]);
-        }
-    }
-
-    public boolean isDebug() {
-        return debug;
-    }
-
-    public void requestRender() {
-        final OverlayView overlay = (OverlayView) findViewById(R.id.debug_overlay);
-        if (overlay != null) {
-            overlay.postInvalidate();
-        }
-    }
-
-    public void addCallback(final OverlayView.DrawCallback callback) {
-        final OverlayView overlay = (OverlayView) findViewById(R.id.debug_overlay);
-        if (overlay != null) {
-            overlay.addCallback(callback);
-        }
-    }
-
-    public void onSetDebug(final boolean debug) {
-    }
-
-    @Override
-    public boolean onKeyDown(final int keyCode, final KeyEvent event) {
-        if (keyCode == KeyEvent.KEYCODE_VOLUME_DOWN || keyCode == KeyEvent.KEYCODE_VOLUME_UP) {
-            debug = !debug;
-            requestRender();
-            onSetDebug(debug);
-            return true;
-        }
-        return super.onKeyDown(keyCode, event);
-    }
-
-    protected abstract void onPreviewSizeChosen(final Size size, final int rotation);
-
-    protected abstract int getLayoutId();
-
-    protected abstract Size getDesiredPreviewFrameSize();
-
-
-    @Override
-    public void onBackPressed() {
-
-        if (getFragmentManager().getBackStackEntryCount() >= 2) {
-            getFragmentManager().popBackStack();
-        } else {
-            if (lastBackPressTime + 2000 > System.currentTimeMillis()) {
-                animateExitScreen();
-            } else {
-                Toast.makeText(getBaseContext(), "Please click BACK again to exit",
-                        Toast.LENGTH_SHORT).show();
-            }
-        }
-
-        lastBackPressTime = System.currentTimeMillis();
-    }
-
-    private void animateExitScreen() {
-
-        //Circular exit Animation
-        if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.LOLLIPOP) {
-            Animator anim = Animatrix.exitReveal(fragContainer);
-
-            overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
-
-            anim.addListener(new AnimatorListenerAdapter() {
-                @Override
-                public void onAnimationEnd(Animator animation) {
-                    super.onAnimationEnd(animation);
-                    supportFinishAfterTransition();
-                }
-            });
-
-            anim.start();
-        } else {
-            finish();
-        }
-    }
 }

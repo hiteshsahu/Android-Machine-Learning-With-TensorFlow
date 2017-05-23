@@ -98,6 +98,18 @@ public class ImageUtils {
   // Always prefer the native implementation if available.
   private static boolean useNativeConversion = true;
 
+  /**
+   * Converts YUV to RGB
+   * @param yData
+   * @param uData
+   * @param vData
+   * @param width
+   * @param height
+   * @param yRowStride
+   * @param uvRowStride
+   * @param uvPixelStride
+     * @param out
+     */
   public static void convertYUV420ToARGB8888(
       byte[] yData,
       byte[] uData,

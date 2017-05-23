@@ -98,7 +98,7 @@ public class SplashActivity extends FragmentActivity {
                     public void onAnimationEnd(Animation arg0) {
 
                         startActivity(new Intent(getApplicationContext(),
-                                ClassifierActivityBase.class));
+                                LandingActivity.class));
 
                         overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
                         finish();
